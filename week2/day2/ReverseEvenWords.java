@@ -15,24 +15,15 @@ public class ReverseEvenWords {
   			{
   				System.out.println(splitTest[i]);
   				
-  				
-  				for (int j=splitTest[i].length()-1;j>=0;i--)
+  				charArray = splitTest[i].toCharArray();
+  				for (int j=splitTest[i].length()-1;j>=0;j--)
   				{
-  					
-  					charArray = splitTest[j].toCharArray();
-  					System.out.println(charArray[i]);
+  					  					
+  				 revStr = revStr+charArray[j];
   				}
   				
-  				String str = new String(charArray);  
-
-  				System.out.println(str);
-  				/*for (int j=splitTest[i].length()-1;j>=0;j--)
-  				{
-  					revStr = revStr+splitTest[j];
-  				}**/
-  			}
-  			else
-  			{
+  				
+ 				System.out.println("Reversed string = "+revStr);
   				
   			}
   			
